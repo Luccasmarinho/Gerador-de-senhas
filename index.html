@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas aleatórias</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+
+        <section class="container-result-password-hidden">
+            <div class="password-area">
+                <span id="result-password"></span>
+                <i class="fa-regular fa-copy" id="icon-copy"></i>
+            </div>
+        </section>
+
+        <section class="container-gerador">
+            <form action="#" class="formulario">
+                <div class="input-area-range">
+                    <input type="range" name="tamanho-caracteres" min="1" max="25" class="barra">
+                    <span id="value">15</span>
+                </div>
+                <div class="input-checkbox">
+                    <div class="checkbox-area">
+                        <input type="checkbox" name="minuscula" id="minuscula">
+                        <label for="minuscula">Incluir letras minúsculas</label>
+                    </div>
+                    <div class="checkbox-area">
+                        <input type="checkbox" name="maiuscula" id="maiuscula">
+                        <label for="maiuscula">Incluir letras maiúsculas</label>
+                    </div>
+                    <div class="checkbox-area">
+                        <input type="checkbox" name="numeros" id="numeros">
+                        <label for="numeros">Incluir números</label>
+                    </div>
+                    <div class="checkbox-area">
+                        <input type="checkbox" name="caractere-especial" id="caractere-especial">
+                        <label for="caractere-especial">Incluir caractere especial</label>
+                    </div>
+                </div>
+                <button class="btn-gerar-senha">Gerar senha</button>
+            </form>
+        </section>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
